@@ -22,7 +22,7 @@ public class HelloController extends SimpleFormController {
         //Initialize controller properties here or 
         //in the Web Application Context
 
-        setCommandClass(Name.class);
+        setCommandClass(User.class);
         setCommandName("name");
         setSuccessView("helloView");
         setFormView("nameView");
@@ -39,11 +39,13 @@ protected ModelAndView onSubmit(
             Object command,
             BindException errors) throws Exception {
 
-        Name name = (Name) command;
+        User name = (User) command;
         ModelAndView mv = new ModelAndView(getSuccessView());
-        mv.addObject("helloMessage", helloService.sayHello(name.getValue()));
-        mv.addObject("umur", helloService.sayUmur(name.getUmur()));
-        mv.addObject("umr", helloService.sayUmur(name.getUmur()));
+        mv.addObject("nama", helloService.tampilNama(name.getNama()));
+       
+        mv.addObject("alamat", helloService.tampilAlamat(name.getAlamat()));
+        mv.addObject("telp", helloService.tampilTelp(name.getTelp()));
+        mv.addObject("email", helloService.sayEmail(name.getEmail()));
         return mv;
 }
 private HelloService helloService;

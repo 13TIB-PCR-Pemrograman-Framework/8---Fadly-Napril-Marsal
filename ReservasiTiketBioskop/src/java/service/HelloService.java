@@ -10,10 +10,21 @@ package service;
  * @author LabGSG
  */
 public class HelloService {
-    public static String sayHello(String name) {
-        return "Hello " + name + "";
+    public static String tampilUmur(String umur) {
+        return "Umur :  " + umur + "";
     }
-      public static String sayUmur(String umur) {
-        return "Umur anda " + umur + "";
+        public static String tampilNama(String nama) {
+        return "Nama :  " + nama + "";
     }
+         public static String tampilAlamat(String alamat) {
+        return "Umur :  " + alamat + "";
+    }
+        public static String tampilTelp(String telp) {
+        return "Telp :  " + telp + "";
+    }
+                public static String tampilEmail(String email) {
+        return "email :  " + email + "";
+    }
+ 
+
 }
