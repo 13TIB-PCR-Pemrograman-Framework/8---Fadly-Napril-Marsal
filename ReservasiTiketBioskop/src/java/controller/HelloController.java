@@ -43,6 +43,7 @@ protected ModelAndView onSubmit(
         ModelAndView mv = new ModelAndView(getSuccessView());
         mv.addObject("helloMessage", helloService.sayHello(name.getValue()));
         mv.addObject("umur", helloService.sayUmur(name.getUmur()));
+        mv.addObject("umr", helloService.sayUmur(name.getUmur()));
         return mv;
 }
 private HelloService helloService;
