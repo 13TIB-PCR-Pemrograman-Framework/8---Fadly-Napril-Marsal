@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>balalal</title>
+        <title>Welcome to Spring Web MVC Otong Punya project</title>
     </head>
 
     <body>
